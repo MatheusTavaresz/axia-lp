@@ -24,7 +24,7 @@ export function Process() {
           <Reveal delay={1}>
             <article className={`${styles.column} ${styles.before}`}>
               <p className={styles.columnLabel}>Antes</p>
-              <h3 className={styles.columnTitle}>Caos manual</h3>
+              <h3 className={styles.columnTitle}>Processo manual</h3>
               <ul className={styles.list}>
                 <li>Cliente envia pelo SharePoint e ainda renomeia cada arquivo</li>
                 <li>Lotes de até 200 arquivos geram gargalo imediato</li>
