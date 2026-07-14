@@ -1,4 +1,5 @@
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/asset";
 import styles from "./Solution.module.css";
 
 export function Solution() {
@@ -53,7 +54,7 @@ export function Solution() {
           <Reveal>
             <figure className={styles.shot}>
               <img
-                src="/screens/analise-fiscal.png"
+                src={asset("screens/analise-fiscal.png")}
                 alt="Análise fiscal com pré-visualização do documento e histórico"
                 loading="lazy"
               />

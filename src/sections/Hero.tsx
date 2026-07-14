@@ -1,11 +1,12 @@
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/asset";
 import styles from "./Hero.module.css";
 
 export function Hero() {
   return (
     <header className={styles.hero}>
       <div className={styles.media} aria-hidden="true">
-        <img src="/screens/login.png" alt="" />
+        <img src={asset("screens/login.png")} alt="" />
       </div>
       <div className={styles.veil} aria-hidden="true" />
       <div className={`container ${styles.content}`}>

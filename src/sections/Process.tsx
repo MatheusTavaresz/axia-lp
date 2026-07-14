@@ -1,4 +1,5 @@
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/asset";
 import styles from "./Process.module.css";
 
 export function Process() {
@@ -84,14 +85,14 @@ export function Process() {
               <div className={styles.shotGrid}>
                 <figure className={styles.shot}>
                   <img
-                    src="/screens/cliente-leitura.png"
+                    src={asset("screens/cliente-leitura.png")}
                     alt="Tela de leitura automática do documento no portal do cliente"
                     loading="lazy"
                   />
                 </figure>
                 <figure className={styles.shot}>
                   <img
-                    src="/screens/cliente-confirmacao.png"
+                    src={asset("screens/cliente-confirmacao.png")}
                     alt="Confirmação dos dados extraídos antes do envio"
                     loading="lazy"
                   />
@@ -140,14 +141,14 @@ export function Process() {
               <div className={styles.shotGrid}>
                 <figure className={styles.shot}>
                   <img
-                    src="/screens/esteira.png"
+                    src={asset("screens/esteira.png")}
                     alt="Visão Kanban da esteira operacional Axia Flow"
                     loading="lazy"
                   />
                 </figure>
                 <figure className={styles.shot}>
                   <img
-                    src="/screens/totvs.png"
+                    src={asset("screens/totvs.png")}
                     alt="Documentos concluídos prontos para exportação XLSX TOTVS"
                     loading="lazy"
                   />
