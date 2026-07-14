@@ -4,6 +4,4 @@ dist
 *.local
 .env
 .env.*
-cliente/
-interno axia/
-tela de login.png
+.references/

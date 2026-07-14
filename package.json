@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pages": "npm run build && rm -rf docs && mkdir docs && cp -R dist/. docs/ && touch docs/.nojekyll"
   },
   "dependencies": {
     "react": "^19.1.0",
