@@ -1,22 +1,22 @@
 import { Reveal } from "../components/Reveal";
 import styles from "./Impact.module.css";
 
-const metrics = [
+const items = [
   {
-    value: "30",
-    label: "pessoas na operação com mais capacidade de atendimento no mesmo fluxo",
+    title: "Entrada centralizada",
+    text: "Os documentos chegam por um único canal, sem depender de trocas dispersas ou controles paralelos.",
   },
   {
-    value: "200",
-    label: "arquivos em um lote, sem gargalo de renomeação manual",
+    title: "Processamento automatizado",
+    text: "Arquivos são organizados, validados e preparados sem renomeação ou tratamento manual repetitivo.",
   },
   {
-    value: "0",
-    label: "digitação no TOTVS: o XLSX de importação já sai pronto",
+    title: "Menos retrabalho",
+    text: "Inconsistências são identificadas antes da etapa final, reduzindo correções e reenvios.",
   },
   {
-    value: "1",
-    label: "fluxo contínuo do envio do cliente até o ERP",
+    title: "Integração com o ERP",
+    text: "Os dados seguem estruturados para importação no TOTVS, sem necessidade de redigitação.",
   },
 ];
 
@@ -28,24 +28,25 @@ export function Impact() {
           <header className={styles.header}>
             <span className="section-label">Impacto</span>
             <h2 id="impacto-title" className="section-title">
-              O que muda na operação
+              Uma operação mais simples, fluida e confiável
             </h2>
             <p className="section-lead">
-              Números do cenário atual: menos retrabalho manual e um caminho
-              único do documento até o ERP.
+              O Axia Flow conecta todas as etapas do processo documental em uma
+              única jornada, reduzindo atividades manuais, evitando retrabalho e
+              preparando as informações para integração com o ERP.
             </p>
           </header>
         </Reveal>
 
         <div className={styles.grid}>
-          {metrics.map((metric, index) => (
+          {items.map((item, index) => (
             <Reveal
-              key={metric.value + metric.label}
+              key={item.title}
               delay={(index % 3) as 0 | 1 | 2 | 3}
             >
-              <article className={styles.metric}>
-                <p className={styles.value}>{metric.value}</p>
-                <p className={styles.label}>{metric.label}</p>
+              <article className={styles.item}>
+                <h3 className={styles.itemTitle}>{item.title}</h3>
+                <p className={styles.itemText}>{item.text}</p>
               </article>
             </Reveal>
           ))}
