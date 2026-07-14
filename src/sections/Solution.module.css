@@ -1,0 +1,127 @@
+.section {
+  padding-block: var(--space-3xl);
+  background: var(--color-surface);
+  color: var(--color-navy);
+}
+
+.section :global(.section-label) {
+  color: var(--color-purple);
+}
+
+.section :global(.section-title) {
+  color: var(--color-navy);
+}
+
+.section :global(.section-lead) {
+  color: var(--color-navy-soft);
+  opacity: 0.85;
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.pillar {
+  padding-top: var(--space-md);
+  border-top: 2px solid var(--color-purple);
+}
+
+.pillarTitle {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.pillarText {
+  color: var(--color-navy-soft);
+  opacity: 0.85;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-lg);
+  align-items: end;
+}
+
+.shot {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-line-dark);
+  box-shadow: 0 20px 50px rgba(18, 21, 43, 0.12);
+}
+
+.shot img {
+  width: 100%;
+}
+
+.aside {
+  padding: var(--space-lg);
+  background: var(--color-navy);
+  color: var(--color-ink);
+  border-radius: var(--radius);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.asideTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.asideList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.asideList li {
+  color: var(--color-ink-muted);
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.asideList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--color-purple-bright);
+}
+
+@media (max-width: 900px) {
+  .pillars,
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding-block: var(--space-2xl);
+  }
+
+  .aside {
+    padding: var(--space-md);
+  }
+}

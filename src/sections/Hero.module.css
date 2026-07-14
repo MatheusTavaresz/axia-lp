@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.02);
+}
+
+.veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(18, 21, 43, 0.55) 0%,
+      rgba(18, 21, 43, 0.72) 42%,
+      rgba(18, 21, 43, 0.96) 100%
+    ),
+    radial-gradient(
+      ellipse 80% 50% at 70% 20%,
+      rgba(107, 78, 255, 0.28),
+      transparent 60%
+    );
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-bottom: var(--space-xl);
+}
+
+.brandName {
+  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.brandName span {
+  background: linear-gradient(120deg, var(--color-purple-bright), var(--color-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brandProduct {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.content {
+  padding-block: var(--space-3xl) var(--space-2xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.15rem, 5.2vw, 3.75rem);
+  font-weight: 600;
+  max-width: 16ch;
+  margin-bottom: var(--space-md);
+}
+
+.subtitle {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--color-ink-muted);
+  max-width: 38ch;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .content {
+    padding-block: var(--space-2xl) var(--space-xl);
+  }
+
+  .brand {
+    margin-bottom: var(--space-lg);
+  }
+}
