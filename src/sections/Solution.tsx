@@ -14,7 +14,7 @@ export function Solution() {
             </h2>
             <p className="section-lead">
               Um sistema integrado ao ecossistema Microsoft e preparado para o
-              TOTVS — pensado para decisão de sócios, não para complexidade
+              TOTVS, pensado para decisão de sócios, não para complexidade
               técnica.
             </p>
           </header>
@@ -44,7 +44,7 @@ export function Solution() {
               <h3 className={styles.pillarTitle}>Pronto para o TOTVS</h3>
               <p className={styles.pillarText}>
                 Geração automática do arquivo de importação. O operador baixa o
-                XLSX no layout do ERP — sem digitação manual.
+                XLSX no layout do ERP, sem digitação manual.
               </p>
             </article>
           </Reveal>

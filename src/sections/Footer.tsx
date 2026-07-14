@@ -7,7 +7,7 @@ export function Footer() {
         <p className={styles.brand}>
           A<span>XI</span>A BPO
         </p>
-        <p className={styles.product}>Axia Flow — gestão documental inteligente</p>
+        <p className={styles.product}>Axia Flow, gestão documental inteligente</p>
       </div>
     </footer>
   );

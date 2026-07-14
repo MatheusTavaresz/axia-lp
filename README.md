@@ -6,9 +6,9 @@ Landing page do Axia Flow (AXIA BPO).
 
 | Pasta | Função |
 |-------|--------|
-| `src/` | Código-fonte React — **único lugar para editar a LP** |
+| `src/` | Código-fonte React (**único lugar para editar a LP**) |
 | `public/` | Imagens e favicon usados no site |
-| `docs/` | Build gerado para o GitHub Pages — **não editar à mão** |
+| `docs/` | Build gerado para o GitHub Pages (**não editar à mão**) |
 | `index.html` | Entrada do Vite em desenvolvimento |
 
 `dist/` é build local temporário (ignorado no git).  

@@ -20,7 +20,7 @@ export function Hero() {
         </Reveal>
         <Reveal delay={1}>
           <h1 className={styles.title}>
-            Devolver tempo estratégico à operação — e escalar sem aumentar o time.
+            Automação do fluxo documental, do envio ao ERP
           </h1>
         </Reveal>
         <Reveal delay={2}>

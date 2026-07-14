@@ -13,7 +13,7 @@ export function Process() {
               A Esteira de Fluxo Inteligente
             </h2>
             <p className="section-lead">
-              Do envio do cliente até o arquivo pronto para o ERP — um fluxo
+              Do envio do cliente até o arquivo pronto para o ERP: um fluxo
               contínuo, visível e auditável, sem e-mails internos nem pastas
               manuais.
             </p>
@@ -40,10 +40,10 @@ export function Process() {
               <h3 className={styles.columnTitle}>Fluidez automatizada</h3>
               <ul className={styles.list}>
                 <li>Cliente envia, confere os dados extraídos e confirma</li>
-                <li>Sem renomeação — o sistema organiza o arquivo</li>
+                <li>Sem renomeação: o sistema organiza o arquivo</li>
                 <li>Esteira interna com análise fiscal e histórico completo</li>
                 <li>Pastas do OneDrive atualizadas automaticamente</li>
-                <li>Exportação XLSX no layout TOTVS — zero digitação</li>
+                <li>Exportação XLSX no layout TOTVS, sem digitação</li>
               </ul>
             </article>
           </Reveal>
@@ -64,7 +64,7 @@ export function Process() {
                   <span className={styles.stepNum}>01</span>
                   <p className={styles.stepName}>Arquivo</p>
                   <p className={styles.stepDesc}>
-                    Seleciona o tipo e envia o PDF — sem renomear.
+                    Seleciona o tipo e envia o PDF, sem renomear.
                   </p>
                 </div>
                 <div className={styles.step}>
@@ -106,7 +106,7 @@ export function Process() {
               <header className={styles.trackHeader}>
                 <h3 className={styles.trackTitle}>Do lado da operação</h3>
                 <p className={styles.trackLead}>
-                  A esteira move o documento com clareza — da recepção ao arquivo
+                  A esteira move o documento com clareza, da recepção ao arquivo
                   pronto para o TOTVS.
                 </p>
               </header>
