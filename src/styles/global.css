@@ -1,21 +1,37 @@
 :root {
-  --color-navy: #12152b;
-  --color-navy-mid: #1b1f3b;
-  --color-navy-soft: #252a4a;
-  --color-purple: #6b4eff;
-  --color-purple-bright: #7b5cff;
-  --color-blue: #4f7cff;
-  --color-ink: #e8eaf4;
-  --color-ink-muted: #a8aec8;
-  --color-surface: #f4f5fb;
+  --color-brand-dark: #0e0b2e;
+  --color-brand-primary: #3f2dcd;
+  --color-brand-primary-mid: #4d3cd4;
+  --color-brand-primary-light: #6766ee;
+  --color-muted: #8e8e8e;
+  --color-surface: #fcfcfc;
+  --color-gradient-accent: #b85feb;
+  --color-neutral-dark: #0f0f0f;
+  --color-secondary-blue: #0000ff;
+  --color-secondary-navy: #00509a;
+
+  --color-navy: var(--color-brand-dark);
+  --color-navy-mid: #161246;
+  --color-navy-soft: #2a2460;
+  --color-purple: var(--color-brand-primary);
+  --color-purple-bright: var(--color-brand-primary-light);
+  --color-blue: var(--color-brand-primary-mid);
+  --color-ink: #f4f3ff;
+  --color-ink-muted: #b8b5d1;
   --color-surface-elevated: #ffffff;
   --color-line: rgba(255, 255, 255, 0.1);
-  --color-line-dark: rgba(18, 21, 43, 0.1);
-  --color-danger-soft: #f3e8e8;
-  --color-success-soft: #e8f1ef;
+  --color-line-dark: rgba(14, 11, 46, 0.1);
 
-  --font-sans: "Outfit", system-ui, sans-serif;
-  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-sans: var(--font-body);
+  --font-display: "New Science", var(--font-body), sans-serif;
+
+  --brand-gradient: linear-gradient(
+    135deg,
+    #3f2dcd 0%,
+    #6766ee 50%,
+    #b85feb 100%
+  );
 
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
@@ -26,6 +42,9 @@
   --space-3xl: 8rem;
 
   --radius: 0.75rem;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
   --max-width: 72rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -42,11 +61,11 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.6;
   color: var(--color-ink);
-  background: var(--color-navy);
+  background: var(--color-brand-dark);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -59,6 +78,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-family: var(--font-display);
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
@@ -93,18 +113,19 @@ button {
 
 .section-label {
   display: inline-block;
+  font-family: var(--font-display);
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-purple-bright);
+  color: var(--color-brand-primary-light);
   margin-bottom: var(--space-md);
 }
 
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-ink);
   max-width: 18ch;
 }
@@ -114,6 +135,7 @@ button {
   color: var(--color-ink-muted);
   max-width: 42ch;
   font-size: 1.125rem;
+  font-family: var(--font-body);
 }
 
 .reveal {

@@ -1,7 +1,7 @@
 .section {
   padding-block: var(--space-3xl);
   background:
-    linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-mid) 100%);
+    linear-gradient(180deg, var(--color-brand-dark) 0%, var(--color-navy-mid) 100%);
   border-top: 1px solid var(--color-line);
 }
 
@@ -33,10 +33,10 @@
 .after {
   background: linear-gradient(
     160deg,
-    rgba(107, 78, 255, 0.16),
-    rgba(18, 21, 43, 0.35)
+    rgba(63, 45, 205, 0.18),
+    rgba(14, 11, 46, 0.35)
   );
-  border-color: rgba(123, 92, 255, 0.35);
+  border-color: rgba(103, 102, 238, 0.4);
 }
 
 .columnLabel {
@@ -127,7 +127,7 @@
 }
 
 .step {
-  border-top: 2px solid rgba(123, 92, 255, 0.45);
+  border-top: 2px solid rgba(103, 102, 238, 0.45);
   padding-top: var(--space-md);
 }
 

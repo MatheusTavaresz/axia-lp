@@ -12,9 +12,11 @@ export function Hero() {
       <div className={`container ${styles.content}`}>
         <Reveal>
           <div className={styles.brand}>
-            <p className={styles.brandName}>
-              A<span>XI</span>A BPO
-            </p>
+            <img
+              className={styles.logo}
+              src={asset("brand/logo-light.png")}
+              alt="AXIA BPO"
+            />
             <p className={styles.brandProduct}>Axia Flow</p>
           </div>
         </Reveal>

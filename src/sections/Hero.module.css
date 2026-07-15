@@ -28,13 +28,13 @@
   background:
     linear-gradient(
       180deg,
-      rgba(18, 21, 43, 0.55) 0%,
-      rgba(18, 21, 43, 0.72) 42%,
-      rgba(18, 21, 43, 0.96) 100%
+      rgba(14, 11, 46, 0.55) 0%,
+      rgba(14, 11, 46, 0.75) 42%,
+      rgba(14, 11, 46, 0.97) 100%
     ),
     radial-gradient(
       ellipse 80% 50% at 70% 20%,
-      rgba(107, 78, 255, 0.28),
+      rgba(63, 45, 205, 0.35),
       transparent 60%
     );
 }
@@ -42,30 +42,22 @@
 .brand {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  align-items: flex-start;
+  gap: 0.75rem;
   margin-bottom: var(--space-xl);
 }
 
-.brandName {
-  font-size: clamp(2.75rem, 8vw, 5.5rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.95;
-  margin: 0;
-}
-
-.brandName span {
-  background: linear-gradient(120deg, var(--color-purple-bright), var(--color-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.logo {
+  width: min(100%, 18rem);
+  height: auto;
 }
 
 .brandProduct {
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--color-ink-muted);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
 }
@@ -77,12 +69,13 @@
 .title {
   font-family: var(--font-display);
   font-size: clamp(2.15rem, 5.2vw, 3.75rem);
-  font-weight: 600;
+  font-weight: 700;
   max-width: 16ch;
   margin-bottom: var(--space-md);
 }
 
 .subtitle {
+  font-family: var(--font-body);
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   color: var(--color-ink-muted);
   max-width: 38ch;
@@ -96,5 +89,9 @@
 
   .brand {
     margin-bottom: var(--space-lg);
+  }
+
+  .logo {
+    width: min(100%, 12rem);
   }
 }

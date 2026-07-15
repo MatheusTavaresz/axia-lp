@@ -3,7 +3,7 @@
   background:
     radial-gradient(
       ellipse 70% 60% at 10% 0%,
-      rgba(107, 78, 255, 0.22),
+      rgba(63, 45, 205, 0.28),
       transparent 55%
     ),
     var(--color-navy-mid);
@@ -30,7 +30,24 @@
 
 .item {
   padding-top: var(--space-md);
-  border-top: 1px solid rgba(123, 92, 255, 0.4);
+  border-top: 1px solid rgba(103, 102, 238, 0.45);
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-md);
+  background: rgba(63, 45, 205, 0.28);
+  color: var(--color-brand-primary-light);
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .itemTitle {
@@ -46,6 +63,7 @@
   color: var(--color-ink-muted);
   font-size: 1rem;
   line-height: 1.5;
+  font-family: var(--font-body);
 }
 
 @media (max-width: 900px) {

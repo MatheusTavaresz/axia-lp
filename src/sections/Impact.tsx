@@ -1,22 +1,27 @@
 import { Reveal } from "../components/Reveal";
+import { Icon } from "../components/Icon";
 import styles from "./Impact.module.css";
 
 const items = [
   {
     title: "Entrada centralizada",
     text: "Os documentos chegam por um único canal, sem depender de trocas dispersas ou controles paralelos.",
+    icon: "inbox" as const,
   },
   {
     title: "Processamento automatizado",
     text: "Arquivos são organizados, validados e preparados sem renomeação ou tratamento manual repetitivo.",
+    icon: "flow" as const,
   },
   {
     title: "Menos retrabalho",
     text: "Inconsistências são identificadas antes da etapa final, reduzindo correções e reenvios.",
+    icon: "check" as const,
   },
   {
     title: "Integração com o ERP",
     text: "Os dados seguem estruturados para importação no TOTVS, sem necessidade de redigitação.",
+    icon: "erp" as const,
   },
 ];
 
@@ -45,6 +50,9 @@ export function Impact() {
               delay={(index % 3) as 0 | 1 | 2 | 3}
             >
               <article className={styles.item}>
+                <span className={styles.iconWrap}>
+                  <Icon name={item.icon} className={styles.icon} />
+                </span>
                 <h3 className={styles.itemTitle}>{item.title}</h3>
                 <p className={styles.itemText}>{item.text}</p>
               </article>
